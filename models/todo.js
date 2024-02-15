@@ -2,11 +2,14 @@ import mongoose from 'mongoose';
 
 
 const todoSchema = new mongoose.Schema({
-    todo: {
+    text: {
         type: String,
-        ref: "User",
         required: true
-    },
+      },
+      completed: {
+        type: Boolean,
+        default: false
+      }
     
 
 }, {timestamps: true});
