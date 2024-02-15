@@ -1,9 +1,24 @@
 const express = require('express');
-const morgan = require('morgan')
-
+const morgan = require('morgan');
+// const mongoose = require('mongoose');
+ const cors = require('cors')
 
 const app = express();
 const PORT = 3000;
+
+// middleware
+app.use(morgan('dev'));//logger
+app.use(cors());// connect to frontend
+app.use(express.json())
+
+
+//routes
+
+
+
+//user
+//randomActivity
+
 
 
 
